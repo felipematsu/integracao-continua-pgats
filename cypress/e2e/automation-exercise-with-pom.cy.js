@@ -88,7 +88,7 @@ describe('Automation Exercise', () => {
 
   it('Test Case 15: Place Order: Register before Checkout', () => {
     menu
-      .irParaMenu('Signups')
+      .irParaMenu('Signup')
       .iniciarCadastro(tiposDeUsuarios.usuario2)
       .preencherFormularioDeCadastro(tiposDeUsuarios.usuario2)
       .verificarSeCadastroFoiConcluido(tiposDeUsuarios.usuario2);

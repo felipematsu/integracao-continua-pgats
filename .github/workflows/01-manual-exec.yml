@@ -14,10 +14,10 @@ jobs:
         run: npm i
 
       - name: Instalando Cypress
-        run: npx install -D cypress
+        run: npm install -D cypress
 
       - name: Verificando versão do Cypress
-        run: npx cypress --version
+        run: npm cypress --version
 
       - name: Testes E2E (end-to-end)
         run: npx cypress run 

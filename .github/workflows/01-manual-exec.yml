@@ -7,17 +7,8 @@ jobs:
   e2e-tests:
     runs-on: ['ubuntu-latest']
 
-    strategy:
-      matrix:
-        node-version: ['20.x']
-
     steps:
       - uses: actions/checkout@v4
-
-      - name: Instalando o Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ matrix.node-version }}
 
       - name: Instalando dependências
         run: npm i

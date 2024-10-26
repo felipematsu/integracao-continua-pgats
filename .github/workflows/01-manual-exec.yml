@@ -14,13 +14,13 @@ jobs:
         run: npm i
 
       - name: Instalando Cypress
-        run: npm install -D cypress
+        run: npx install -D cypress
 
       - name: Verificando versão do Cypress
-        run: npm cypress --version
+        run: npx cypress --version
 
       - name: Testes E2E (end-to-end)
-        run: npm cypress run 
+        run: npx cypress run 
 
       # passed, failed, cancelled
       - uses: actions/upload-artifact@v4
